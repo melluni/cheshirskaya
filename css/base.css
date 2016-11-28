@@ -1,0 +1,51 @@
+h2 {
+    padding: 20px;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+
+    position: relative;
+
+    margin-top: 70px;
+    padding: 10px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: black;
+}
+
+.title:after {
+    position: absolute;
+    right: 0;
+    bottom: -24px;
+    left: 0;
+
+    width: 42px;
+    margin: 0 auto;
+
+    content: '';
+
+    border-bottom: 2px solid #d55727;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-menu::after,
+.about-me::after,
+.clearfix::after,
+.contact:after,
+.portfolio__list:after, 
+.container:after {
+    display: table;
+    clear: both;
+    overflow: hidden;
+
+    content: '';
+}

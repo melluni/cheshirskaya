@@ -1,0 +1,43 @@
+h2 {
+	padding: 20px;
+}
+
+.title {
+	// height: 30px;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 14px;
+	text-transform: uppercase;
+	position: relative;
+	margin: 40px 0;
+	text-align: center;
+	padding: 10px;
+}
+
+.title:after {
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	width: 42px;
+	border-bottom: 2px solid #d55727;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.container {
+	width: 751px;
+	margin: 30px auto;
+}
+
+.main-menu::after,
+.about-me::after, 
+.clearfix::after,
+.contact:after {
+	content: '';
+	clear: both;
+	display: table;
+	overflow: hidden;
+}
